@@ -173,9 +173,11 @@ new branch for your work on the next question!
 */
 
 // Write your code here
-function multiplyArray(testArray){ //eslint-disable-line
-
+function multiplyArray(testArray){ 
+    var prod3 = sumAndMultiply( testArray[0], testArray[1], testArray[2] )[1];
+    var str3 = 'The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' have a product of ' + prod3 + '.';
+    return [prod3, str3];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(2,3,4);
+testMultiplyArray(2,3,4);
