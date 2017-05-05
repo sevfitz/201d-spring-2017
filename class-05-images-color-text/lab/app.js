@@ -25,7 +25,7 @@ a new branch for your work on the next question!
 // Write your code here
 function sum(a,b){ //eslint-disable-line
     var sum = a + b;
-    var str = "The sum of " + a + " and " + b + " is " + sum + ".";
+    var str = 'The sum of ' + a + ' and ' + b + ' is ' + sum + '.';
     
     return [ sum, str ];
 
