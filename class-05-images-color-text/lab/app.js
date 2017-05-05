@@ -60,12 +60,14 @@ create a new branch for your work on the next question!
 */
 
 // Write your code here
-function multiply(a,b){ //eslint-disable-line
-
+function multiply(a,b){ 
+    var prod = a * b;
+    var str = 'The product of ' + a + ' and ' + b + ' is ' + prod + '.';
+    return [ prod, str ];
 }
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+testMultiply(5,9);
 
 
 /////////////////////////////////////
