@@ -101,8 +101,8 @@ new branch for your work on the next question!
 
 // Write your code here
 function sumAndMultiply(a,b,c){ 
-    var sum3Num = sum( a, b )[0] + sum( c, 0 )[0];
-    var prod3Num = multiply( a, b )[0] * multiply( c, 1 )[0];
+    var sum3Num = sum( sum(a,b)[0], sum(c,0)[0] )[0];
+    var prod3Num = multiply( multiply(a,b)[0], multiply(c,1)[0] )[0];
     var sumStr = a + ' and ' + b + ' and ' + c + ' sum to ' + sum3Num + '.';
     var prodStr = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + prod3Num + '.';
     return [ sum3Num, prod3Num, sumStr, prodStr ];
@@ -136,14 +136,16 @@ new branch for your work on the next question!
 */
 
 // Write your code here
-var testArray = [2,3,4]; //eslint-disable-line
+var testArray = [2,3,4]; 
 
-function sumArray(testArray){ //eslint-disable-line
-
+function sumArray(testArray){ 
+    var sum3 = sumAndMultiply( testArray[0], testArray[1], testArray[2] )[0];
+    var str3 = testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' was passed in as an array of numbers, and ' + sum3 + ' is their sum.';
+    return [sum3, str3];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
-// testSumArray(testArray);
+testSumArray(testArray);
 
 
 /////////////////////////////////////
