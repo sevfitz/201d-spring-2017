@@ -23,7 +23,7 @@ a new branch for your work on the next question!
 */
 
 // Write your code here
-function sum(a,b){ //eslint-disable-line
+function sum(a,b){ 
     var sum = a + b;
     var str = 'The sum of ' + a + ' and ' + b + ' is ' + sum + '.';
     
@@ -100,12 +100,16 @@ new branch for your work on the next question!
 */
 
 // Write your code here
-function sumAndMultiply(a,b,c){ //eslint-disable-line
-
+function sumAndMultiply(a,b,c){ 
+    var sum3Num = sum( a, b )[0] + sum( c, 0 )[0];
+    var prod3Num = multiply( a, b )[0] * multiply( c, 1 )[0];
+    var sumStr = a + ' and ' + b + ' and ' + c + ' sum to ' + sum3Num + '.';
+    var prodStr = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + prod3Num + '.';
+    return [ sum3Num, prod3Num, sumStr, prodStr ];
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 
 /////////////////////////////////////
