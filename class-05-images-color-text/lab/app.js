@@ -139,7 +139,7 @@ new branch for your work on the next question!
 var testArray = [2,3,4]; 
 
 function sumArray(testArray){ 
-    var sum3 = sumAndMultiply( testArray[0], testArray[1], testArray[2] )[0];
+    var sum3 = sumAndMultiply(...testArray)[0]; // sumAndMultiply( testArray[0], testArray[1], testArray[2] )[0]; // sum_and_multiply(*test_array);
     var str3 = testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' was passed in as an array of numbers, and ' + sum3 + ' is their sum.';
     return [sum3, str3];
 }
